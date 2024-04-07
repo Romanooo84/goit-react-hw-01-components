@@ -1,16 +1,11 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      Czesc
-    </div>
-  );
-};
+
+import { Name, Stats } from "./user.jsx";
+import {Data} from "./stats.jsx"
+
+export const App = props => (
+  <div>
+    <Name />
+    <Stats />
+    <Data/>
+  </div>
+);
