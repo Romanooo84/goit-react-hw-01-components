@@ -1,8 +1,9 @@
+import css from '../css/transaction.module.css'
 const transaction = require('./data/transactions.json');
 
 export const Transaction =() => {
     return (
-        <table className="transaction-history">
+        <table className={css.transactionHistory}>
             <thead>
                 <tr>
                     <th>Type</th>
@@ -11,9 +12,9 @@ export const Transaction =() => {
                 </tr>
             </thead>
 
-            <tbody>
+            <tbody className={css.tBody}>
                 {transaction.map(({type, amount, currency }, index) => (
-                    <tr key={index}>
+                    <tr key={index} className={index % 2 === 0 ? css.evenRow : css.oddRow}>
                         <td>{type}</td>
                         <td>{amount}</td>
                         <td>{currency}</td>
