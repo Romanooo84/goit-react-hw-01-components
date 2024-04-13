@@ -1,0 +1,45 @@
+.mainFriendList{
+    background-color: white;
+    width: 100%;
+}
+
+.friendsList{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 10px;
+    background-color: white;
+    width: 300px;
+    border-radius: 1%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+                -5px -5px 10px rgba(255, 255, 255, 0.5);
+}
+
+ul{
+    padding: 0;
+}
+
+.onLine{
+    background-color: green;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.offLine {
+    background-color: red;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.imgFriends{
+    width: 90px;
+    margin: 10px;
+    background-color: rgb(201, 210, 207);
+    border-radius: 5%;
+}

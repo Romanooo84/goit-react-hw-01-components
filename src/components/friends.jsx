@@ -1,28 +1,29 @@
-const friends = require('./users/friends.json');
+import css from '../css/friends.module.css'
+const friends = require('./data/friends.json');
 
 const friendsData = friends.map(({ isOnline, avatar, name }, index) => (
-    <li className="friendsList" key={index}>
+    <li className={css.friendsList} key={index}>
         {isOnline ? (
             <>
-                <p className='onLine'>is Online</p>
-                <img src={avatar} alt="friends' avatar" />
+                <p className={css.onLine}></p>
+                <img src={avatar} alt="friends' avatar" className={css.imgFriends} />
                 <p>{name}</p>
             </>
         ) : (
             <>
-                <p className='offLine'>is Offline</p>
-                <img src={avatar} alt="friends' avatar" />
+                    <p className={css.offLine}></p>
+                <img src={avatar} alt="friends' avatar" className={css.imgFriends}/>
                 <p>{name}</p>
             </>
         )}
     </li>
 ));
 
-export const Friends = props => {
+export const Friends =()=> {
     return (
-<ul className="friend-list">
+        <ul className={css.mainFriendList}>
             {friendsData}
-</ul>
+        </ul>
     )
 }
 

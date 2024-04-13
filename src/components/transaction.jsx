@@ -1,4 +1,4 @@
-const transaction = require('./users/transactions.json');
+const transaction = require('./data/transactions.json');
 
 export const Transaction =() => {
     return (

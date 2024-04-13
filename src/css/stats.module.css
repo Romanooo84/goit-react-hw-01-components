@@ -1,0 +1,37 @@
+.statistics{
+    margin-top: 20px;
+    width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+}
+
+.title {
+    color: rgb(213, 193, 193);
+    text-transform: uppercase;
+}
+
+.statList{
+    padding: 0;
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin: 0;
+}
+
+
+.item {
+    list-style-type: none;
+    display: flex;
+    min-width: 20%;
+    padding-top:10px;
+    padding-bottom: 5%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bla{
+    color: rgb(183, 183, 176);
+}
